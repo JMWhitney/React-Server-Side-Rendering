@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {initialCards} from '../store';
+import Link from 'next/link';
 import './index.css';
 import Card from './Card';
 
@@ -13,7 +14,9 @@ class Index extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="/static/logo.png" className="static-logo" alt="logo" />
+          <Link href="/page2">
+            <img src="/static/logo.jpg" className="static-logo" alt="logo" />
+          </Link>
         </header>
         <div className="Grid">
           {
